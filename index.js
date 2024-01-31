@@ -53,10 +53,19 @@ app.post('/cotizacion', (req, res) => {
     }
 
     // Mapear los datos recibidos a la estructura predefinida
+    /*
     mapearDatos(data);
     console.log("Form Data:",form)
     // Responder con la estructura predefinida actualizada
-    res.status(201).json(data);
+    */
+    const cotizaciones = {
+        cotizacion1: 3000,
+        cotizacion2: 4000,
+        cotizacion3: 5000,
+        cotizacion4: 6000,
+        
+    };
+    res.status(201).json(cotizaciones);
 });
 
 // Iniciar el servidor
